@@ -5,15 +5,18 @@ html(lang="ru")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(property="og:type" content="website")
-		meta(property="og:url" content="")
-		meta(property="og:title" content="")
-		meta(property="og:description" content="")
-		meta(property="og:image" content="")
-		title «»
+		meta(property="og:url" content="https://hell.mastervision.su/horary-astrology/")
+		meta(property="og:title" content=" «Хорарная астрология»")
+		meta(property="og:description" content="Бесплатный 5-ти дневный интенсив Лидии Хэлль")
+		meta(property="og:image" content="https://hell.mastervision.su/horary-astrology/img/banner.jpg")
+		title Бесплатный 5-ти дневный интенсив Лидии Хэлль «Хорарная астрология»
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/styles.css")
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-130434463-1")
+		script
+			| window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-130434463-1');
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 	body
@@ -26,9 +29,20 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		include pug/scripts
+		include pug/main/main
+		include pug/main/for
+		include pug/main/answers
+		include pug/main/plan
+		include pug/main/author
+		include pug/main/revs
+		include pug/main/footer
+		include pug/main/scripts
 		<!--BEGIN JIVOSITE CODE-->
 		//script
 			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
 		<!--END JIVOSITE CODE-->
-		iframe(name="results" style="display:none;")
+		<!-- AutoWebOffice: UTM or OpenStat Counter -->
+		script(type="text/javascript")
+			| var url = "https://aleksandrkudryashov1.autoweboffice.ru/?r=api/utmopenstat";
+		script(type="text/javascript" src="https://aleksandrkudryashov1.autoweboffice.ru/js/utm_openstat.js" defer="defer")
+		<!-- /AutoWebOffice: UTM or OpenStat Counter -->

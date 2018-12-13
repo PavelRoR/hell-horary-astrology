@@ -1,8 +1,65 @@
+@font-face {
+	font-family: 'GilroyExtraBold';
+	src: url('../fonts/GilroyExtraBold.eot');
+	src: url('../fonts/GilroyExtraBold.eot') format('embedded-opentype'),
+		 url('../fonts/GilroyExtraBold.woff2') format('woff2'),
+		 url('../fonts/GilroyExtraBold.woff') format('woff'),
+		 url('../fonts/GilroyExtraBold.ttf') format('truetype'),
+		 url('../fonts/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
+	font-display: fallback;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GilroyLight';
+	src: url('../fonts/GilroyLight.eot');
+	src: url('../fonts/GilroyLight.eot') format('embedded-opentype'),
+		 url('../fonts/GilroyLight.woff2') format('woff2'),
+		 url('../fonts/GilroyLight.woff') format('woff'),
+		 url('../fonts/GilroyLight.ttf') format('truetype'),
+		 url('../fonts/GilroyLight.svg#GilroyLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff2') format('woff2'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSansLight.eot');
+	src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansLight.woff') format('woff'),
+		 url('../fonts/OpenSansLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+
 *
 	margin 0
 	padding 0
 	outline none
-
+body
+	font-family: 'GilroyLight', sans-serif
+	font-size: 16px
+	background-color #fff
+	background-image url(../img/body_bg.png)
+	background-repeat repeat
+	background-position: center
 a
 	color: #fefefe
 	&:focus
@@ -44,3 +101,42 @@ button
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	border-radius: 25px;
+	background-color: rgb(217, 94, 123);
+	width: 100%;
+	max-width: 270px;
+	margin 0 auto
+	height: 55px;
+	line-height: 55px;
+	text-decoration: none
+	font-size: 16px;
+	font-family: "GilroyExtraBold", sans-serif;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center
+	transition: all .3s ease
+	&:focus
+		background-color: rgb(217, 94, 123);
+		color #ffffff
+		text-decoration: none
+	&:hover
+		text-decoration: none
+		background-color: rgb(199,60,93);
+		color #ffffff
+.general_title
+	font-size: 36px;
+	font-family: "GilroyExtraBold", sans-serif;
+	color: rgb(34, 34, 47);
+	line-height: 1.423;
+	text-align: center;
+
+@import 'main/main'
+@import 'main/for'
+@import 'main/answers'
+@import 'main/plan'
+@import 'main/author'
+@import 'main/revs'
+@import 'main/footer'
+@import 'main/medias'
