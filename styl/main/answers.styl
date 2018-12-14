@@ -1,10 +1,25 @@
 #as_n_qs
 	width 100%
 	padding  230px 0 200px
-	background-image url(../img/as_n_qs.svg)
-	background-repeat no-repeat
-	background-position: center
-	background-size: cover
+	position relative
+	.container
+		position relative
+		z-index 9
+	&:before
+		position: absolute;
+		z-index: 0;
+		content: '';
+		display: block;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: inherit;
+		background-image: url("../img/as_n_qs.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 .general_title_as_n_qs
 	color #fff
 	margin-bottom: 73px
