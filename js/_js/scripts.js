@@ -19,8 +19,8 @@ $(document).ready(function () {
 				return false;
 			}
 			if (!check.prop("checked")) {
-				check.next().css("color", "red");
-				check.next().children().css("color", "red");
+				check.next().css("color", "#000");
+				check.next().children().css("color", "#000");
 				message.text('Подтвердите соглашение').slideDown(500);
 				return false;
 			}
@@ -29,7 +29,7 @@ $(document).ready(function () {
 				button.text('Отправляем...');
 				setTimeout(function () {
 					button.text('Отправлено!');
-				}, 400);
+				}, 500);
 			}
 		});
 		email.click(function () {
@@ -37,8 +37,8 @@ $(document).ready(function () {
 			message.slideUp(500);
 		});
 		check.click(function () {
-			check.next().css("color", "#000");
-			check.next().children().css("color", "#000");
+			check.next().css("color", "rgba(255,255,255, .9)");
+			check.next().children().css("color", "rgba(255,255,255, .9)");
 			message.slideUp(500);
 		});
 	});
