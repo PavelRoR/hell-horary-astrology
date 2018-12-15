@@ -8,17 +8,21 @@ html(lang="ru")
 		meta(property="og:url" content="https://hell.mastervision.su/horary-astrology/bonus/")
 		meta(property="og:title" content=" Бонус")
 		meta(property="og:description" content="от Лидии Хэлль")
+		meta(property="fb:app_id" content="2030481470529055")
 		title Бонус от Лидии Хэлль
-		link(rel="icon" type="image/x-icon" href="favicon.ico")
-		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		link(rel="stylesheet" href="css/styles.css")
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
+		link(rel="stylesheet" href="../css/bonus.css")
+		script(src="//vk.com/js/api/openapi.js?153")
+		script
+			| VK.init({apiId: 6314801,onlyWidgets: true});
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-130434463-1")
 		script
 			| window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-130434463-1');
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
-	body
+	body#bonus
 		noscript
 			img(src="https://vk.com/rtrg?p=VK-RTRG-11201-hHU9b" style="position:fixed; left:-999px;" alt="")
 		<!-- Yandex.Metrika counter -->
@@ -28,7 +32,66 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		h1 в разработке
+		div#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+		#main
+			.container
+				header#header
+					a(href="https://mastervision.su", target="_blank")
+						img#logo(src="../img/logo.png", alt="Логотип")
+					.contacts
+						a.tel(href="callto:8-929-568-87-50")
+							i.fa.fa-phone(aria-hidden="true")
+							span 8-929-568-87-50
+						a.tel(href="callto:8-499-346-79-46")
+							i.fa.fa-phone(aria-hidden="true")
+							span 8-499-346-79-46
+						a.skype(href="skype:add?admin-mastervision")
+							i.fa.fa-skype(aria-hidden="true")
+							span admin-mastervision
+						a.email(href="mailto:info@mastervision.su")
+							i.fa.fa-envelope(aria-hidden="true")
+							span info@mastervision.su
+				p.pre Бонус от 
+					span Лидии Хэлль
+				h1.main_title «Период ретроградного Меркурия. Чего нужно остерегаться»
+				h3.main_date Старт интенсива:
+					span &nbsp;с 14 января, 19:00 (по МСК)
+				.video_wrapper.main_video_wrapper
+					iframe(src="https://youtube.com/embed/AKEllMGycxo?rel=false&autoplay=false" allowfullscreen)
+		section#feedback
+			.container
+				h3.general_title.general_title_bonus Вашы вопросы к Лидии пишите 
+					span в формах ниже:
+				.row
+					.col-md-6.col-sm-6
+						#vk
+							#vk_comments
+							script(type="text/javascript")
+								| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+					.col-md-6.col-sm-6
+						#fb
+							.fb-comments(data-href="https://hell.mastervision.su/horary-astrology/bonus/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
+		footer#footer
+			.container
+				.soc_buttons
+					h5 Хотите узнать больше? Вступайте в наши группы!
+					a(href="https://www.facebook.com/Mastervision1C/" target="_blank")
+						i(class="fa fa-facebook" aria-hidden="true")
+					a(href="http://vk.com/mv_ezoterika" target="_blank")
+						i(class="fa fa-vk" aria-hidden="true")
+					a(href="https://twitter.com/MastervisionEzo" target="_blank")
+						i(class="fa fa-twitter" aria-hidden="true")
+					a(href="https://www.instagram.com/mastervision1/" target="_blank")
+						i(class="fa fa-instagram" aria-hidden="true")
+					a(href="https://www.ok.ru/group/54472921710656" target="_blank")
+						i(class="fa fa-odnoklassniki" aria-hidden="true")
+					a(href="https://www.youtube.com/channel/UCiJTdt19jRMRmYyCZac2Lvg/" target="_blank")
+						i(class="fa fa-youtube" aria-hidden="true")
+					.clfix
+				p ИП Кудряшов Александр Анатольевич, Тюмень, проезд Летний, 9а, ИНН 720410077658, ОГРН 315723200065100
+		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 		<!-- AutoWebOffice: UTM or OpenStat Counter -->
 		script(type="text/javascript")
 			| var url = "https://aleksandrkudryashov1.autoweboffice.ru/?r=api/utmopenstat";
