@@ -120,6 +120,13 @@ button
 	text-align: center
 	transition: all .3s ease
 	cursor pointer
+	overflow hidden
+	position relative
+	span
+		display inline-block
+		// width 100%
+		// height 100%
+		transition: all .3s ease
 	&:focus
 		background-color: rgb(217, 94, 123);
 		color #ffffff
@@ -128,6 +135,15 @@ button
 		text-decoration: none
 		background-color: rgb(199,60,93);
 		color #ffffff
+.fa-button
+	transition: all .4s ease
+	position: absolute
+	top: 50%
+	transform: translate(350px,-50%)
+.button:hover span
+	transform: translateX(-5px)
+.button:hover .fa-button
+	transform: translate(0, -50%)
 .general_title
 	font-size: 36px;
 	font-family: "GilroyExtraBold", sans-serif;

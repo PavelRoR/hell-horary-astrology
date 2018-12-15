@@ -21,7 +21,9 @@ section#main
 					.email-block
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="mail" name="Contact[email]" type="text" placeholder="Ваш email")
-					button(type="submit").button.button_mail Записаться
+					button(type="submit").button.button_mail
+						span Записаться
+						i.fa.fa-check-square-o.fa-button(aria-hiden="true")
 				p.alert_message
 				<!--Обязательный параметр. Не удалять и не изменять!-->
 				input(type="hidden" value="548" name="Contact[id_newsletter]")
