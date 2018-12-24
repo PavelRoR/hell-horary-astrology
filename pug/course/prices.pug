@@ -1,0 +1,111 @@
+-var full_1 = '13 900р.'
+-var full_2 = '33 900р.'
+-var full_3 = '55 900р.'
+-var sale_1 = '2 000р.'
+-var sale_2 = '4 000р.'
+-var sale_3 = '6 00р.'
+-var today_1 = '11 900р.'
+-var today_2 = '29 900р.'
+-var today_3 = '49 900р.'
+-var link_1 = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2536&clean=true&lg=ru'
+-var link_2 = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2541&clean=true&lg=ru'
+-var link_3 = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2546&clean=true&lg=ru'
+-var prep_bonus = '1 100р.'
+-var prep_cred = '3 00р.'
+-var prep_link = ''
+
+section#prices
+	.container
+		h3.general_title.general_title_prices Выберите 
+			span свой пакет 
+			| участия
+		.rowprices_row
+			.col-md-4.col-sm-4
+				.price_packet
+					.price_packet_head
+						h4.price_packet_head_title 
+							small пакет
+							| Серебро
+					.price_packet_body
+						h5.price_packet_body_title Хорарная астрология для начинающих
+							small 1 блок обучения
+						ul.price_packet_list
+							li 15 часов/6 уроков + 1 бонус
+							li Теория и практика
+							li Проверка домашних заданий
+							li Доступ ко всем записям
+							li Общий чат
+							li Чек лист - Толкуем хорарную карту по пунктам
+							li Бонус - практический урок на пройденные темы - 2,5 ч.
+							li Общий чат
+					.price_packet_footer
+						p.cost.cost_full Стоимость:
+							span= full_1
+						p.cost.cost_sale Скидка:
+							span#sale_= sale_1
+						p.cost.cost_today Стоимость сегодня:
+							span#today_=today_1
+						a.button.cost_button(href= link_1 target="_blank")#link_1 Выбрать
+			.col-md-4.col-sm-4
+				.price_packet
+					.price_packet_head
+						h4.price_packet_head_title 
+							small пакет
+							| Золото
+					.price_packet_body
+						h5.price_packet_body_title Хорарная астрология для продвинутых
+							small 1 и 2 блоки обучения
+						ul.price_packet_list
+							li 35 часов/14 урoков + 2 бонуса
+							li Теория и практика
+							li Проверка домашних заданий
+							li Доступ ко всем записям
+							li Общий чат
+							li Чек лист - Толкуем хорарную карту по пунктам
+							li Бонус - 2 практических урока на пройденные темы - 5 ч.
+					.price_packet_footer
+						p.cost.cost_full Стоимость:
+							span= full_2
+						p.cost.cost_sale Скидка:
+							span#sale_= sale_2
+						p.cost.cost_today Стоимость сегодня:
+							span#today_=today_2
+						a.button.cost_button(href= link_2 target="_blank")#link_2 Выбрать
+			.col-md-4.col-sm-4
+				.price_packet
+					.price_packet_head
+						h4.price_packet_head_title 
+							small пакет
+							| Платина
+					.price_packet_body
+						h5.price_packet_body_title Хорарная астрология для гуру
+							small 1, 2 и 3 блоки обучения
+						ul.price_packet_list
+							li 52,5 часов/21 урок + 3 бонуса
+							li Теория и практика на все жизненные темы + гуморальная медицина
+							li Проверка домашних заданий
+							li Доступ ко всем записям
+							li Общий чат
+							li Чек лист - Толкуем хорарную карту по пунктам
+							li Бонус - 3 практических урока на пройденные темы - 7,5 ч.
+							li Право на сдачу экзамена с выдачей сертификата
+					.price_packet_footer
+						p.cost.cost_full Стоимость:
+							span= full_3
+						p.cost.cost_sale Скидка:
+							span#sale_= sale_3
+						p.cost.cost_today Стоимость сегодня:
+							span#today_=today_3
+						a.button.cost_button(href= link_3 target="_blank")#link_3 Выбрать
+		.prepayment
+			h4.prepaymant_title Акция!!!
+			p.prepayment_text Платите 1900 рублей, бонусом получаете 
+				span#prepayment_bonus= prep_bonus
+				<br />
+				| На счет зачисляется 
+				span#prepayment_credited=prep_cred 
+			a.button.prepayment_button(href= prep_link target="_blank" id="prepayment_link") Оплатить 1 900р.
+		.timer
+			h4.timer_title Скидка сгорит через:
+			.clock
+			.clock-stop
