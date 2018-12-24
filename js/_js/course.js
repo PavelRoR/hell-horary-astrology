@@ -3,6 +3,7 @@
 //@prepros-prepend flipclock.min.js
 //@prepros-prepend lazy.min.js
 //@prepros-prepend jquery.fancybox.min.js
+//@prepros-prepend bootstrap.min.js
 $(function () {
 	/* Якорь */
 	$(function () {
