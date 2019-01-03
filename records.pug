@@ -4,15 +4,16 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		meta(property="og:type" content="website")
-		meta(property="og:url" content="https://hell.mastervision.su/horary-astrology/")
 		meta(property="og:title" content="«Хорарная астрология»")
-		meta(property="og:description" content="Бесплатный 5-ти дневный интенсив Лидии Хэлль")
-		meta(property="og:image" content="https://hell.mastervision.su/horary-astrology/img/banner.jpg")
-		title Бесплатный 5-ти дневный интенсив Лидии Хэлль «Хорарная астрология»
-		link(rel="icon" type="image/x-icon" href="favicon.ico")
-		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		link(rel="stylesheet" href="css/styles.css")
+		meta(property="og:description" content="Записи и домашние задания интенсива Лидии Хэлль")
+		meta(property="fb:app_id" content="2030481470529055")
+		title Записи и домашние задания интенсива Лидии Хэлль «Хорарная астрология» 
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
+		link(rel="stylesheet" href="../css/course.css")
+		script(src="//vk.com/js/api/openapi.js?153")
+		script
+			| VK.init({apiId: 6314801,onlyWidgets: true});
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-130434463-1")
 		script
@@ -35,18 +36,17 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		include pug/main/main
-		include pug/main/for
-		include pug/main/answers
-		include pug/main/plan
-		include pug/main/author
-		include pug/main/revs
-		include pug/main/footer
-		include pug/main/scripts
-		<!--BEGIN JIVOSITE CODE-->
+		div#fb-root
 		script
-			| (function() {var widget_id = 'UN0DIfFTmV';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
-		<!--END JIVOSITE CODE-->
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+		include pug/recs/main
+		include pug/course/get
+		include pug/course/plan
+		include pug/course/learn
+		include pug/course/prices
+		include pug/recs/videos
+		include pug/course/footer
+		include pug/course/scripts
 		<!-- AutoWebOffice: UTM or OpenStat Counter -->
 		script(type="text/javascript")
 			| var url = "https://aleksandrkudryashov1.autoweboffice.ru/?r=api/utmopenstat";
